@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.2.3.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Chase Connectivity | Enterprise Telecom &amp; Carrier Operations&lt;/title&gt;
+    &lt;style&gt;
+        /* Modern Reset &amp; Corporate Color Palette based on image */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --navy-dark: #000c24;
+            --blue-main: #002fbe;
+            --gold-bright: #ffbd14;
+            --gold-dark: #f0a500;
+            --text-light: #ffffff;
+            --text-dark: #000c24;
+            --bg-light: #f8fafc;
+        }
+
+        body {
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        header {
+            background: rgba(0, 12, 36, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--gold-bright);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo-container img {
+            height: 50px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold-bright);
+        }
+
+        /* Hero Section with Custom Wave Background Integration */
+        .hero {
+            position: relative;
+            background: linear-gradient(180deg, var(--navy-dark) 0%, var(--blue-main) 70%);
+            color: var(--text-light);
+            padding: 180px 20px 180px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-waves {
+            position: absolute;
+            top: 20%;
+            left: -10%;
+            width: 120%;
+            height: 60%;
+            background-image: radial-gradient(rgba(255,255,255,0.15) 1px, transparent 0);
+            background-size: 24px 24px;
+            transform: skewY(-4deg);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+
+        .hero h1 span {
+            color: var(--gold-bright);
+            text-shadow: 0 2px 10px rgba(240, 165, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold-dark) 100%);
+            color: var(--navy-dark);
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(255, 189, 20, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 189, 20, 0.6);
+        }
+
+        /* The Gold/Yellow Wave Curve Transition from image */
+        .wave-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .wave-container svg {
+            position: relative;
+            display: block;
+            width: calc(140% + 1.3px);
+            height: 110px;
+        }
+
+        .wave-container .shape-fill {
+            fill: var(--gold-bright);
+        }
+
+        /* Services Section (Transitions from the Gold Wave) */
+        .services {
+            background: linear-gradient(180deg, var(--gold-bright) 0%, #fffde6 120px, #ffffff 100%);
+            padding: 120px 20px 80px;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--navy-dark);
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 60px;
+            color: #55657e;
+        }
+
+        .services-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            padding: 40px 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 12, 36, 0.05);
+            border-bottom: 5px solid var(--blue-main);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 31, 190, 0.15);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--blue-main);
+        }
+
+        /* Integrated Due Diligence Section */
+        .sop-section {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .sop-container {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0, 12, 36, 0.08);
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+        }
+
+        .sop-header {
+            background: var(--navy-dark);
+            color: var(--text-light);
+            padding: 25px 30px;
+            border-bottom: 4px solid var(--gold-bright);
+        }
+
+        .sop-header h2 {
+            font-size: 1.8rem;
+            letter-spacing: 0.5px;
+        }
+
+        .sop-header p {
+            color: var(--gold-bright);
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .sop-row {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            border-bottom: 1px solid #e2e8f0;
+            transition: background 0.2s ease;
+        }
+
+        .sop-row:last-child {
+            border-bottom: none;
+        }
+
+        .sop-row:hover {
+            background: #f8fafc;
+        }
+
+        .sop-label {
+            background: rgba(0, 47, 190, 0.02);
+            padding: 30px;
+            font-weight: 700;
+            color: var(--blue-main);
+            border-right: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+        }
+
+        .sop-content {
+            padding: 30px;
+        }
+
+        .sop-content ul {
+            list-style: none;
+        }
+
+        .sop-content li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: #334155;
+        }
+
+        .sop-content li::before {
+            content: &quot;✓&quot;;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--gold-dark);
+            font-weight: bold;
+        }
+
+        .sop-content .highlight-time {
+            display: inline-block;
+            background: #fef3c7;
+            color: #92400e;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Infrastructure Panel */
+        .infrastructure {
+            background: var(--navy-dark);
+            color: var(--text-light);
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        .infra-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .infra-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .infra-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            color: var(--gold-bright);
+        }
+
+        .infra-stats {
+            flex: 1;
+            min-width: 300px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 35px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-box h4 {
+            font-size: 3rem;
+            color: var(--gold-bright);
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 20px;
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact form {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact input, .contact textarea {
+            padding: 18px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+            width: 100%;
+        }
+
+        .contact input:focus, .contact textarea:focus {
+            border-color: var(--blue-main);
+        }
+
+        /* Footer */
+        footer {
+            background: #000614;
+            color: rgba(255, 255, 255, 0.6);
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.95rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.4rem; }
+            .sop-row { grid-template-columns: 1fr; }
+            .sop-label { border-right: none; border-bottom: 1px solid #e2e8f0; padding: 15px 30px; }
+            .infra-stats { grid-template-columns: 1fr; }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;!-- Header / Navigation --&gt;
+    &lt;header&gt;
+        &lt;div class=&quot;navbar&quot;&gt;
+            &lt;div class=&quot;logo-container&quot;&gt;
+                &lt;img src=&quot;https://lh3.googleusercontent.com/d/1C8iXPdVlY9IJhqnUV4D-hUWU_UEj4gSL&quot; alt=&quot;Chase Connectivity Logo&quot; onerror=&quot;this.onerror=null; this.src='https://via.placeholder.com/220x50/000c24/ffffff?text=Chase+Connectivity';&quot;&gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;nav-links&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#services&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#due-diligence&quot;&gt;Carrier Dashboard&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#infrastructure&quot;&gt;Infrastructure&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;!-- Hero Section --&gt;
+    &lt;section class=&quot;hero&quot;&gt;
+        &lt;div class=&quot;hero-waves&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;hero-content&quot;&gt;
+            &lt;h1&gt;High-Speed Infrastructure &lt;span&gt;Engineered for Reliability&lt;/span&gt;&lt;/h1&gt;
+            &lt;p&gt;Providing robust point-to-point connections, premium dark fiber deployment, and carrier-grade IP Transit tailored for modern enterprises.&lt;/p&gt;
+            &lt;a href=&quot;#due-diligence&quot; class=&quot;btn&quot;&gt;View Operations Manual&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;wave-container&quot;&gt;
+            &lt;svg data-name=&quot;Layer 1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1200 120&quot; preserveAspectRatio=&quot;none&quot;&gt;
+                &lt;path d=&quot;M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z&quot; class=&quot;shape-fill&quot;&gt;&lt;/path&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Services Section --&gt;
+    &lt;section id=&quot;services&quot; class=&quot;services&quot;&gt;
+        &lt;h2 class=&quot;section-title&quot;&gt;Our Enterprise Solutions&lt;/h2&gt;
+        &lt;p class=&quot;section-subtitle&quot;&gt;Delivering high-capacity telecommunications solutions across strategic regional and core Metro Manila hubs.&lt;/p&gt;
+        &lt;div class=&quot;services-grid&quot;&gt;
+            &lt;div class=&quot;service-card&quot;&gt;
+                &lt;h3&gt;Fiber Optic Deployment&lt;/h3&gt;
+                &lt;p&gt;End-to-end civil works, customized municipal path clearing, and precise multi-core optical fiber layouts designed for future expansions.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;service-card&quot;&gt;
+                &lt;h3&gt;High-Capacity Backhaul&lt;/h3&gt;
+                &lt;p&gt;Dedicated high-speed loop systems and point-to-point transport networks that link major regional hubs safely with minimal hops.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;service-card&quot;&gt;
+                &lt;h3&gt;Resilient Peering &amp; IP&lt;/h3&gt;
+                &lt;p&gt;Strategic BGP route handling and multi-homed upstream paths ensuring that service disruptions are prevented automatically.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Interactive Due Diligence Section --&gt;
+    &lt;section id=&quot;due-diligence&quot; class=&quot;sop-section&quot;&gt;
+        &lt;h2 class=&quot;section-title&quot; style=&quot;margin-bottom: 10px;&quot;&gt;Carrier Operations Protocol&lt;/h2&gt;
+        &lt;p class=&quot;section-subtitle&quot; style=&quot;margin-bottom: 40px;&quot;&gt;Standard operating procedures enforced by Chase Connectivity to guarantee quality delivery.&lt;/p&gt;
+        
+        &lt;div class=&quot;sop-container&quot;&gt;
+            &lt;div class=&quot;sop-header&quot;&gt;
+                &lt;h2&gt;CARRIER TEAM: DUE DILIGENCE&lt;/h2&gt;
+                &lt;p&gt;INTERNAL DISPATCH &amp; COMPLIANCE FRAMEWORK&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;sop-row&quot;&gt;
+                &lt;div class=&quot;sop-label&quot;&gt;Feasibility&lt;/div&gt;
+                &lt;div class=&quot;sop-content&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;strong&gt;Data Verification:&lt;/strong&gt; Always double check details. Ensure account name, BW requirements &amp; service, complete address, and coordinates are complete.&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Circuit Matching:&lt;/strong&gt; For DLL accounts, double check Site A and Site B. For IX accounts, verify the Rack ID and transport requirements.&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Group Dispatch:&lt;/strong&gt; Submit requirements to the preferred telco. Right after submission, notify the account manager in the group chat immediately.&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Escalation Window:&lt;/strong&gt; Timeline for checking is &lt;span class=&quot;highlight-time&quot;&gt;7 working days&lt;/span&gt;. Send a strict follow-up to the AM on day 5.&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Post-Approval:&lt;/strong&gt; Once verified feasible, inform the assigned sales team to draft contracts and initiate the implementation stage. Check the shared matrix regularly for live updates.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;sop-row&quot;&gt;
+                &lt;div class=&quot;sop-label&quot;&gt;Pricing Approval&lt;/div&gt;
+                &lt;div class=&quot;sop-content&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;strong&gt;Authorization:&lt;/strong&gt; Rate requests are strictly subject to the verified approval of the Carrier Head.&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Turnaround Target:&lt;/strong&gt; Maximum waiting time for rate validation is within &lt;span class=&quot;highlight-time&quot;&gt;2 days&lt;/span&gt; (Fastest resolutions processed same-day).&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Provider Dependency:&lt;/strong&gt; Final wholesale costing directly depends on the chosen backhaul/service provider parameters.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;sop-row&quot;&gt;
+                &lt;div class=&quot;sop-label&quot;&gt;Job Order (JO)&lt;/div&gt;
+                &lt;div class=&quot;sop-content&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;strong&gt;Execution Trigger:&lt;/strong&gt; Carrier Head will initiate the JO request to the preferred telco only when a signed proposal from the end client is securely on hand.&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Document Requirement:&lt;/strong&gt; A signed quote from the preferred telco is strictly required from the AM to process the transaction.&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Turnaround Window:&lt;/strong&gt; Maximum waiting window is &lt;span class=&quot;highlight-time&quot;&gt;7 days&lt;/span&gt;, minimum processing is &lt;span class=&quot;highlight-time&quot;&gt;3 days&lt;/span&gt;.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;sop-row&quot;&gt;
+                &lt;div class=&quot;sop-label&quot;&gt;Implementation&lt;/div&gt;
+                &lt;div class=&quot;sop-content&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;strong&gt;Critical Phase:&lt;/strong&gt; Attention to detail and transparent deployment timelines must be aligned directly with the AM beforehand. Constant back-to-back updates are required.&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Dual-Ended Coordination:&lt;/strong&gt; Active loop synchronization from the assigned PM to the POC or the end client. Ensure clear coordination across both sites.&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Site Survey:&lt;/strong&gt; Secure the end client POC contact information, map out their preferred schedule for field surveys, and route immediately back to the PM.&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Activation Protocol:&lt;/strong&gt; Maintain open channels up to activation day. Activations are strictly handled by the assigned Field Engineer (FE) of the telco.&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Verification Handover:&lt;/strong&gt; Secure official speedtest results confirming subscribed capacity is reached. A signed &lt;strong&gt;Service Acceptance Form&lt;/strong&gt; must be archived upon activation.&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;SLA Trial:&lt;/strong&gt; A &lt;span class=&quot;highlight-time&quot;&gt;7-day testing window&lt;/span&gt; is granted to the end client to monitor circuit stability. Billing automatically commences on Day 8.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;sop-row&quot;&gt;
+                &lt;div class=&quot;sop-label&quot;&gt;Technical Reporting&lt;/div&gt;
+                &lt;div class=&quot;sop-content&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;strong&gt;Triage Responsiveness:&lt;/strong&gt; Technical concerns given by the end client must be acknowledged as soon as possible. Maintain high attentiveness to all Viber operational groups for real-time ticket alerts.&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Categorization:&lt;/strong&gt; Instantly diagnose the link state: Is it a complete down circuit or an intermittent jitter/packet loss incident?&lt;/li&gt;
+                        &lt;li&gt;&lt;strong&gt;Communication Rule:&lt;/strong&gt; Never leave active threads hanging without replies. Provide clear status metrics such as &lt;em&gt;&quot;For a while&quot;&lt;/em&gt; or &lt;em&gt;&quot;Currently checking&quot;&lt;/em&gt; to state commitment.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;sop-row&quot;&gt;
+                &lt;div class=&quot;sop-label&quot;&gt;Data Processing&lt;/div&gt;
+                &lt;div class=&quot;sop-content&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;strong&gt;Accuracy Mandate:&lt;/strong&gt; Double-check every data parameter before relaying it outward to the client. Always confirm and ask internally if you are unsure of any technical metric.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Infrastructure Panel --&gt;
+    &lt;section id=&quot;infrastructure&quot; class=&quot;infrastructure&quot;&gt;
+        &lt;div class=&quot;infra-container&quot;&gt;
+            &lt;div class=&quot;infra-text&quot;&gt;
+                &lt;h2&gt;Built For Uninterrupted Performance&lt;/h2&gt;
+                &lt;p&gt;From underground path deployments to highly dense technical nodes, Chase Connectivity delivers state-of-the-art telecommunication pathways optimized for uptime across critical business hubs.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;infra-stats&quot;&gt;
+                &lt;div class=&quot;stat-box&quot;&gt;
+                    &lt;h4&gt;99.99%&lt;/h4&gt;
+                    &lt;p&gt;SLA Guarded Uptime&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;stat-box&quot;&gt;
+                    &lt;h4&gt;&amp;lt; 5ms&lt;/h4&gt;
+                    &lt;p&gt;Core Node Latency&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Form Section pointing to Formspree --&gt;
+    &lt;section id=&quot;contact&quot; class=&quot;contact&quot;&gt;
+        &lt;h2&gt;Initiate Site Feasibility Check&lt;/h2&gt;
+        &lt;p&gt;Send over your geographical targets or bandwidth requisites, and our technical field crew will get back to you promptly.&lt;/p&gt;
+        
+        &lt;!-- Pinalitan ang action para dumeretso sa Formspree setup para sa iyong email --&gt;
+        &lt;form action=&quot;https://formspree.io/f/xoqorjle&quot; method=&quot;POST&quot;&gt;
+            &lt;input type=&quot;text&quot; name=&quot;Company Name&quot; placeholder=&quot;Corporate / Business Name&quot; required&gt;
+            &lt;!-- May 'replyto' attribute para kapag sinagot mo ang email, dederetso sa nag-submit --&gt;
+            &lt;input type=&quot;email&quot; name=&quot;_replyto&quot; placeholder=&quot;Corporate Email Address&quot; required&gt;
+            &lt;input type=&quot;text&quot; name=&quot;Site Target&quot; placeholder=&quot;Target Site Area (Coordinates or City)&quot; required&gt;
+            &lt;textarea name=&quot;Project Requirements&quot; rows=&quot;5&quot; placeholder=&quot;Tell us about your infrastructure load demands...&quot; required&gt;&lt;/textarea&gt;
+            
+            &lt;!-- Custom routing settings para sa malinis na interface --&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;_subject&quot; value=&quot;New Chase Connectivity Technical Inquiry Found!&quot;&gt;
+            
+            &lt;button type=&quot;submit&quot; class=&quot;btn&quot; style=&quot;border:none; cursor:pointer; width: 100%;&quot;&gt;Submit Technical Inquiry&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Footer Area --&gt;
+    &lt;footer&gt;
+        &lt;p&gt;© 2026 Chase Connectivity. Secure, Scalable, Seamless Infrastructure Solutions.&lt;/p&gt;
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
